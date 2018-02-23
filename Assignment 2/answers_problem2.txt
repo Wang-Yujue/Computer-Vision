@@ -1,0 +1,4 @@
+How you compute the variance of a single principal component and why the variance can be obtained in that way?
+
+The variance of a single principal component u is given by its eigenvalue. 
+The variance = u'C u = u'eigenvalue u = eigenvalue, where C is covariance matrix.

@@ -1,0 +1,11 @@
+What is the difference between the top (coarsest) level of Gaussian and Laplacian pyramids?
+
+In a Gaussian pyramid, subsequent images are weighted down using a Gaussian average (Gaussian blur) and scaled down. 
+Each pixel containing a local average that corresponds to a pixel neighborhood on a lower level of the pyramid. 
+
+A Laplacian pyramid is very similar to a Gaussian pyramid but saves the difference image of the blurred versions between each levels. 
+Only the smallest level is not a difference image to enable reconstruction of the high resolution image using the difference images on higher levels.
+
+Higher the pyramid level, smaller the difference. No difference at the top level of the Gaussian and the Laplacian pyramid.
+
+Amplify the finest two levels by a factor of k1 = 1.5 and k2 = 1.9 to get the sharpened reconstruction.
