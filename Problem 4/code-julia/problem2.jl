@@ -266,7 +266,8 @@ function problem2()
                                                       # ii) different numbers of perceptrons in each layer
   _,trainpredictions = predict(trainfeatures, Ws, bs, [50,40,1])
   _,testpredictions = predict(testfeatures, Ws, bs, [50,40,1])
-  # adding more perceptrons can improve the performance of the neural networks however still need to consider the computational cost
+  # adding more perceptrons can improve the performance of the neural networks however still need to consider the
+  # computational cost and avoid overfitting at the same time
   # basicly the test erro varies from 0.83% to 2.5%
   # below are some trials with different neurons in the hidden layer
   # 2 perceptrons in the second layer get training error: 1.67% and testing error: 2.5%
